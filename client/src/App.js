@@ -24,19 +24,19 @@ function App() {
           <h3>Join A Chat</h3>
           <input
             type="text"
-            placeholder="John..."
+            placeholder="Enter your Name..."
             onChange={(event) => {
               setUsername(event.target.value);
             }}
           />
           <input
             type="text"
-            placeholder="Room ID..."
+            placeholder="Enter Room ID..."
             onChange={(event) => {
               setRoom(event.target.value);
             }}
           />
-          <button onClick={joinRoom}>Join A Room</button>
+          <button onClick={joinRoom}>Join</button>
         </div>
       ) : (
         <Chat socket={socket} username={username} room={room} />
